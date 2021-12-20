@@ -1,0 +1,31 @@
+.advantage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    margin-top: 10px;
+    background-color: #dde1e6;
+}
+
+.advantage__heading {
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+.advantage__text {
+    padding-top: 20px;
+}
+
+.advantage__link {
+    padding-top: 4px;
+}
+
+.wrap-news__article {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+}

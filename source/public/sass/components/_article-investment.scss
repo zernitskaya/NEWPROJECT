@@ -1,0 +1,30 @@
+
+.article-investment__analize {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fbfbfa;
+  margin: 20px 0;
+}
+
+.article-investment__text {
+  margin-bottom: 10px;
+}
+
+.article-investment__analize-left{
+  padding: 30px;
+  padding-right: 10px;
+}
+
+.article-investment__text {
+  padding-top: 20px;
+}
+
+.article-investment__text--hard {
+  font-weight: 700;
+}
+
+.article-investment__list {
+  list-style: disc;
+  padding-left: 15px;
+}

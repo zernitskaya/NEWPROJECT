@@ -1,0 +1,13 @@
+.btn {
+  width: 213px;
+  height: 43px;
+  background-color: #28a79b;
+  color: #ffffff;
+  text-align: center;
+
+  @include hover {
+    opacity: .8;
+  }
+
+  @include active;
+}

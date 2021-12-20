@@ -1,0 +1,22 @@
+.user-btn {
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include hover {
+  opacity: .8;
+  }
+  @include active;
+}
+
+.user-btn__name {
+  border-right: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px;
+
+}
+
+.user-btn__img {
+ margin-left: 8px;
+}
