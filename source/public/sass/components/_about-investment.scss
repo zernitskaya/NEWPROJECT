@@ -1,0 +1,48 @@
+
+.about-investment {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fbfbfa;
+  margin: 20px 0;
+}
+
+.about-investment__text {
+  margin-bottom: 10px;
+}
+
+.about-investment__analize-left{
+  padding: 30px;
+  padding-right: 10px;
+}
+
+.about-investment__analize-right {
+  max-width: 467px;
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.about-investment__text {
+  padding-top: 20px;
+}
+
+.about-investment__text--hard {
+  font-weight: 700;
+}
+
+.about-investment__list {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.about-investment__ing-wrap {
+  position: relative;
+  padding-bottom: 70%;
+}
+
+.about-investment__analize-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
