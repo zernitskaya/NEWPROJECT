@@ -1,0 +1,15 @@
+.input-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.input-item__text {
+    flex-shrink: 0;
+    margin-right: 24px;
+}
+
+.input-item--required .input-item__text-wrap:after {
+    content: ' *';
+    color: $strong-color;
+}

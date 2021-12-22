@@ -1,0 +1,19 @@
+.portfolio-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // margin-top: 20px;
+}
+
+.portfolio-form__input-item {
+  margin-top: 5px;
+}
+
+.portfolio-form__fildset {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.portfolio-form__fildset:not(:first-child) {
+  padding-left: 50px;
+}

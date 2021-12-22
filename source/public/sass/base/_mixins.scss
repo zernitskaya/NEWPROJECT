@@ -7,6 +7,14 @@
     }
 }
 
+@mixin focus() {
+    @media (hover) {
+      &:focus {
+        @content;
+      }
+    }
+}
+
 @mixin active {
   &:active {
     opacity: .7;

@@ -1,14 +1,14 @@
-
-.hard-heading__big{
-  color: $brand-color;
-  font-size: 24px;
-  font-weight: 700;
-  padding-top: 20px;
+.hard-heading__title {
+    margin-bottom: 30px;
+    color: $brand-color;
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.hard-heading__small {
-  color: $brand-color;
-  font-size:18px;
-  font-weight: 700;
-  padding-top: 20px;
+.hard-heading__text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hard-heading__subtitle {
+    margin-bottom: 24px;
 }

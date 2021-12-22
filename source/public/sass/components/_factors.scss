@@ -3,10 +3,14 @@
   padding: 25px 30px;
 }
 
-.factors__list {
-  list-style: disc;
+.factors__title {
+  margin-bottom: 28px;
 }
 
-.factors__item {
-  list-style-position: inside;
+.factors__list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.factors__text:not(:last-child) {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,29 @@
+.check-item {
+    display: flex;
+    align-items: center;
+}
+
+.check-item__input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.check-item__input:checked ~ .check-item__input__ico {
+    background-color: #005596;
+    border-color: #005596;
+}
+
+.check-item__input__ico {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #458eef;
+}
+
+.check-item__text {
+    margin-left: 7px;
+    font-size: 14px;
+}

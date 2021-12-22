@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {'title': 'New project'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+      @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap">
+        <style>
+          .list-pages {
+            line-height: 1.6;
+            list-style: initial;
+          }
+
+          .list-pages a {
+            color: rgb(0, 0, 238);
+            text-decoration: underline;
+          }
+
+          .list-pages a:active {
+            opacity: .7;
+          }
+        </style>
+
+        <ul class="list-pages">
+          <li>
+            <a href="index.html">index.html</a>
+          </li>
+
+          <!-- /// -->
+
+          <li>
+            <a href="investment-propose.html">investment-propose.html</a>
+          </li>
+          <li>
+            <a href="investment-ipo.html">investment-ipo.html</a>
+          </li>
+          <li>
+            <a href="professional-counseling.html">professional-counseling.html</a>
+          </li>
+
+          <!-- /// -->
+
+          <li>
+            <a href="account-verification.html">account-verification.html</a>
+          </li>
+
+          <li>
+            <a href="portfolio-investment.html">portfolio-investment.html</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+      @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
