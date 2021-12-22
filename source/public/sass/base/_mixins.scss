@@ -15,7 +15,7 @@
 
 
 @mixin media-max {
-    @media (min-width: 1412px) {
+    @media (min-width: 1312px) {
         @content;
     }
 }
