@@ -1,5 +1,8 @@
 .text {
     color: $main-color;
     font-size: 14px;
-    // line-height: 1.42;
+}
+
+.text--bold {
+    font-weight: 700;
 }

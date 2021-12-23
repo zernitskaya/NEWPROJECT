@@ -16,13 +16,15 @@
     <main class="layout__main">
       <div class="layout__main-wrap">
         <section class="account-verification">
-          <h1 class="hard-heading account-verification__title">
-            Верификация счета
-          </h1>
+          <article class="hard-heading account-verification__heading">
+            <h1 class="hard-heading__title">
+              Верификация счета
+            </h1>
 
-          <p class="text account-verification__text">
-            Чтобы полностью активировать торговый счет в PROJECT, каждый клиент должен верифицировать личный счет.
-          </p>
+            <p class="text text--bold hard-heading__text">
+              Чтобы полностью активировать торговый счет в PROJECT, каждый клиент должен верифицировать личный счет.
+            </p>
+          </article>
 
           <form class="form-verification account-verification__form">
             <div class="form-verification__form-main">
@@ -287,7 +289,7 @@
 
                   <span class="form-verification__check-items">
                     <label class="check-item form-verification__check-item">
-                      <input class="check-item__input" type="checkbox">
+                      <input class="check-item__input" type="radio" name="radio1" checked>
 
                       <span class="check-item__input__ico"></span>
 
@@ -295,7 +297,7 @@
                     </label>
 
                     <label class="check-item form-verification__check-item">
-                      <input class="check-item__input" type="checkbox">
+                      <input class="check-item__input" type="radio" name="radio1">
 
                       <span class="check-item__input__ico"></span>
 
@@ -311,7 +313,7 @@
 
                   <span class="form-verification__check-items">
                     <label class="check-item form-verification__check-item">
-                      <input class="check-item__input" type="checkbox">
+                      <input class="check-item__input" type="radio" name="radio2" checked>
 
                       <span class="check-item__input__ico"></span>
 
@@ -319,7 +321,7 @@
                     </label>
 
                     <label class="check-item form-verification__check-item">
-                      <input class="check-item__input" type="checkbox">
+                      <input class="check-item__input" type="radio" name="radio2">
 
                       <span class="check-item__input__ico"></span>
 
@@ -454,23 +456,23 @@
 
                 <div class="form-verification__text-list">
                   <ul class="list">
-                    <li class="list-item">
+                    <li class="list__item">
                       Подтверждаю достоверность вышеуказанной информации и обязуюсь своевременно информировать о любых значительных изменениях в предоставленной информации;
                     </li>
 
-                    <li class="list-item">
+                    <li class="list__item">
                       Подтверждаю, что являюсь и буду являться в дальнейшем собственником финансовых средств, которые будут находиться на моем счете;
                     </li>
 
-                    <li class="list-item">
+                    <li class="list__item">
                       Подтверждаю свое согласие с условиями Клиентского Соглашения;
                     </li>
 
-                    <li class="list-item">
+                    <li class="list__item">
                       Даю свое согласие на обработку всех указанных мной персональных данных;
                     </li>
 
-                    <li class="list-item">
+                    <li class="list__item">
                       Понимаю риски, связанные со сделками с финансовыми инструментами, осознаю, что у инвестиционных (и сопутствующих) услуг в разные финансовые инструменты различные степени рисков и принимаю их.
                     </li>
                   </ul>
@@ -483,99 +485,99 @@
             </div>
           </form>
 
-          <section class="account-verification-desc account-verification__desc">
-            <h2 class="heading heading--small account-verification-desc__title">
+          <article class="article-investment account-verification__article">
+            <h4 class="heading heading--all article-investment__analize-heading">
               Почему верификация счета – обязательное требование
-            </h2>
+            </h4>
 
-            <p class="text account-verification-desc__text">
+            <p class="text article-investment__text">
               Брокерские компании и фонды должны соблюдать длинный список правил. Эти правила имеют важные последствия для форекс-сервисов и брокерских фирм, особенно в том, как они привлекают клиентов. 
             </p>
 
-            <p class="text account-verification-desc__text">
+            <p class="text article-investment__text">
               Также эти компании несут исключительную ответственность за выполнение процедур проверки аккаунта и KYC. Обязательным требованием является сбор личной информации для проверки личности и аутентификации клиента. Фондовым биржам необходимо знать, с кем они имеют дело, когда деньги обращаются между двумя сторонами. Информация о KYC для физических лиц включает:
             </p>
 
-            <ul class="list account-verification-desc__list">
+            <ul class="list article-investment__list">
               <li class="list__item">
                 Имя покупателя (имя, отчество и фамилия).
-              </li> 
+              </li>
 
               <li class="list__item">
                 Дата рождения.
-              </li> 
+              </li>
 
               <li class="list__item">
                 Место жительства или служебный адрес.
-              </li> 
+              </li>
 
               <li class="list__item">
                 Подтверждение адреса, например счет за коммунальные услуги и т. д.
-              </li> 
+              </li>
 
               <li class="list__item">
                 Номер паспорта, гражданство и страна выдачи.
-              </li> 
+              </li>
 
               <li class="list__item">
                 Вторичная форма идентификации, например, водительское удостоверение, национальный документ, удостоверяющий личность.
-              </li> 
+              </li>
 
               <li class="list__item">
                 Дополнительная информация необходима для регистрации юридических лиц и проведения проверок «Знай свой бизнес». 
-              </li> 
+              </li>
             </ul>
 
-            <p class="text account-verification-desc__text">
+            <p class="text article-investment__text">
               PROJECT берет на себя ответственность хранителя счета, средств и документации. 
             </p>
-          </section>
+          </article>
 
-          <article class="article-investment article-investment__analize">
-            <div class="article-investment__analize-left">
-              <h4 class="heading article-investment__analize-heading">
-                Профессиональный анализ эмитентов
+          <article class="about-investment account-verification__investment">
+            <div class="about-investment__analize-left">
+              <h4 class="heading heading--all about-investment__analize-heading">
+                Оценка толерантность к риску
               </h4>
 
-              <p class="text article-investment__text">
-                PO является важной вехой, поскольку указывает на то, что компания
-                находится на стадии роста, когда у нее есть доступ к публичному рынку, что обеспечивает капитал для
-                дальнейшего расширения своей деятельности. Но IPO может быть для многих ошибочной темой. Будучи
-                потенциальным акционером, следить за календарем IPO и покупать акции, когда компания становится
-                публичной,
-                может показаться легким способом рано выйти на рынок. Однако положительное внимание СМИ к IPO может
-                означать, а может и не означать, что это уместное вложение.
+              <p class="text about-investment__text">
+                С инвестиционной точки зрения риск – это степень неопределенности или возможных финансовых потерь,
+                которые вы принимаете, когда принимаете какое-либо решение о деньгах. Даже хранение денежных средств в
+                виде наличных представляет собой риск, поскольку инфляция может постепенно снижать вашу покупательную
+                способность.
               </p>
 
-              <p class="text article-investment__text">
-                Перед покупкой акций важно понимать заблуждения, а также потенциальные возможности, связанные с
-                инвестированием в IPO. Инвесторам следует иметь в виду, что компания, проводящая IPO, не имеет
-                подтвержденной репутации публичной деятельности. Кроме того, конкурентная среда на рынке может повлиять
-                на
-                эффективность IPO. Эти и другие факторы могут негативно повлиять на успех IPO и усложнить решение
-                инвестора. Именно по этой причине лучше всего доверить всестороннее исследование организаций,
-                готовящихся
-                к выходу на биржу, профессионалам PROJECT. Мы вникаем во все детали бизнес-модели эмитента, всесторонне
-                анализируем его и только после этого принимаем решение по поводу целесообразности инвестирования в IPO.
+              <p class="text about-investment__text">
+                Обычно риск и доходность обратно пропорциональны. Чем больше рискуют инвесторы, тем более высокую
+                потенциальную прибыль они ожидают. Как правило, отдельные акции связаны с более высоким риском, чем
+                государственные ценные бумаги; наличные деньги практически не связаны с риском, за исключением
+                потенциальной потери покупательной способности со временем. Чтобы отразить их более высокий уровень
+                риска, акции имеют более высокую потенциальную доходность, чем государственные ценные бумаги, которые
+                предлагают более низкую доходность, но гораздо более стабильную стоимость.
+              </p>
+
+              <p class="text about-investment__text">
+                Прежде чем определить, какие инвестиции идеально подходят для вашего портфеля, специалисты PROJECT
+                оценивают вашу устойчивость к риску. Это определяет, в какой процент каждого типа активов, таких как
+                акции или государственные ценные бумаги, вы можете инвестировать.
               </p>
             </div>
 
-            <div class="main-investment__analize-right">
-              <div class="main-investment__ing-wrap">
-                <img class="main-investment__analize-img" src="./img/investnent.png" alt="">
+            <div class="about-investment__analize-right">
+              <div class="about-investment__ing-wrap">
+                <img class="about-investment__analize-img" src="./img/account-verification.jpg" alt="account-verification">
               </div>
             </div>
           </article>
 
-          <section class="account-verification-desc account-verification__desc">
-            <h2 class="heading heading--small account-verification-desc__title">
+          <article class="article-investment account-verification__article">
+            <h4 class="heading heading--all article-investment__analize-heading">
               Почему верификация счета – обязательное требование
-            </h2>
+            </h4>
 
-            <p class="text account-verification-desc__text">
+            <p class="text article-investment__text">
               Наряду с мерами по выявлению и снижению рисков KYC первостепенное значение имеет скорость исполнения: чем быстрее открывается счет, тем быстрее могут быть выполнены сделки. Но брокерская деятельность и KYC могут быть сложными, дорогостоящими и трудоемкими, требующими множества проверок на этапе открытия счета. Команды комплаенс по-прежнему полагаются на ручные, неэффективные, подверженные ошибкам процессы, которые замедляют процесс адаптации и взаимодействия с клиентом. Мы в PROJECT используем автоматизированную проверку, позволяющую значительно ускорить верификацию и избежать ошибок, возникающих от воздействия человеческого фактора   
             </p>
-          </section>
+          </article>
         </section> 
       </div>
     </main>

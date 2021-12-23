@@ -15,15 +15,50 @@
 .check-item__input:checked ~ .check-item__input__ico {
     background-color: #005596;
     border-color: #005596;
+
+    &:before {
+        opacity: 1;
+    }
 }
 
 .check-item__input__ico {
+    position: relative;
     width: 16px;
     height: 16px;
     border: 2px solid #458eef;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        width: 5px;
+        height: 9px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
 }
 
 .check-item__text {
     margin-left: 7px;
     font-size: 14px;
+}
+
+.check-item__input__ico--color {
+  border: 0;
+  background-color: #ffffff;
+}
+
+.check-item__input:checked ~ .check-item__input__ico--color {
+  background-color: #ffffff;
+  border-color: #005596;
+
+  &:before {
+      opacity: 1;
+      border-color: #005596;
+      left: 5px;
+      top: 2px;
+  }
 }

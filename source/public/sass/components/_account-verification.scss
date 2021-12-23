@@ -1,10 +1,55 @@
-.account-verification__title {
-    margin-bottom: 20px;
+.account-verification__heading {
+    margin-bottom: 16px;
 }
 
-.account-verification__text {
-    margin-bottom: 16px;
-    font-size: 14px;
-    color: #000;
-    font-weight: 700;
+.account-verification__form {
+    margin-bottom: 52px;
+}
+
+.form-verification__checkeds {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.form-verification__checked-item {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.form-verification__check-list--required .form-verification__check-list-wrap:after {
+    content: ' *';
+    color: $strong-color;
+}
+
+.form-verification__check-list-wrap {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.form-verification__check-list-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.form-verification__check-inputs-item {
+    width: 50%;
+    margin-bottom: 10px;
+
+    &:last-child {
+        width: 100%;
+    }
+}
+
+.form-verification__text-list {
+    margin-bottom: 28px;
+}
+
+.account-verification__article {
+    margin-bottom: 30px;
+}
+
+.account-verification__investment {
+    margin-bottom: 30px;
 }
