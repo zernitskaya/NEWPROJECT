@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {'title': 'Для связи с нами'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+        @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+        @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap">
+        <section class="contact-us">
+          <article class="hard-heading contact-us__heading">
+            <h1 class="hard-heading__title">
+              Для связи с нами
+            </h1>
+          </article>
+
+          <div class="contact-us__wrap">
+            <section class="contact-us__contacts">
+              <h2 class="heading heading--color contact-us__contacts-title">
+                Инвестиционный фонд PROJECT всегда поддерживает связь с клиентами и инвесторами.
+              </h2>
+
+              <ul class="contact-list contact-us__contacts-itemas">
+                <li class="contact-list__item">
+                  <p class="contact-list__text">
+                    Чтобы получить консультацию по интересующему вопросу, напишите нам письмо с указанием вашего запроса:
+                  </p>
+
+                  <a class="contact-list__link" href="mailto:info@example.com">
+                    E-mail.: info@example.com
+                  </a>
+                </li>
+
+                <li class="contact-list__item">
+                  <p class="contact-list__text">
+                    Также с нами можно связаться по телефону:
+                  </p>
+
+                  <a class="contact-list__link" href="tel:+70000000000">
+                    Тел.: +7(000)000-00-00
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <form class="contact-form contact-us__form">
+              <h2 class="heading contact-form__title">
+                Заполните форму обратной связи и наши менеджеры свяжутся с вами в удобное для вас время для предоставления консультации.
+              </h2>
+
+              <fieldset class="contact-form__inputs">
+                <div class="contact-form__inputs-item">
+                  <input class="input contact-form__input" type="text" placeholder="Тема*">
+                </div>
+
+                <div class="contact-form__inputs-item">
+                  <input class="input contact-form__input" type="text" placeholder="Имя*">
+                </div>
+
+                <div class="contact-form__inputs-item">
+                  <input class="input contact-form__input" type="tel" placeholder="Телефон*">
+                </div>
+
+                <div class="contact-form__inputs-item">
+                  <input class="input contact-form__input" type="email" placeholder="E-mail">
+                </div>
+
+                <div class="contact-form__inputs-item contact-form__inputs-item--full">
+                  <textarea class="input input--area contact-form__input" placeholder="Сообщение"></textarea>
+                </div>
+              </fieldset>
+
+              <p class="contact-form__text">
+                *Обязательные поля
+              </p>
+
+              <div class="contact-form__btn">
+                <button class="btn btn--second">Отправить запрос</button>
+              </div>
+
+              <div class="contact-form__caapcha">
+                reCAPTCHA
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+        @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

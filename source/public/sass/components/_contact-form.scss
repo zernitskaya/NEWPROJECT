@@ -1,0 +1,33 @@
+.contact-form__title {
+  margin-bottom: 30px;
+}
+
+.contact-form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.contact-form__inputs-item {
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form__inputs-item--full {
+  width: 100%;
+}
+
+.contact-form__text {
+  margin-bottom: 10px;
+}
+
+.contact-form__btn {
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
