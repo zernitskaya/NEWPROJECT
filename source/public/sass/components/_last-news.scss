@@ -1,0 +1,19 @@
+.last-news__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.last-news__heading-wrap {
+  width: 100%;
+}
+
+.last-news__line {
+  width: 100%;
+  border-bottom: 2px solid #000000;
+}
+
+.last-news__btn-wrap {
+ display: flex;
+ justify-content: center;
+}
