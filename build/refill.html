@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Вывод средств</title>
+  <title>Мой счет</title>
 
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="./img/fav-logo.png">
@@ -132,9 +132,9 @@
 
     <main class="layout__main">
       <div class="layout__main-wrap">
-        <section class="withdrawal">
-          <h1 class="heading heading--main withdrawal__title">
-            Вывод средств
+        <section class="withdrawal refill">
+          <h1 class="heading heading--main withdrawal__title ">
+            Мой счет
           </h1>
 
           <section class="trading-widget withdrawal__tracker">
@@ -205,7 +205,7 @@
                     <label class="input-item input-item--min panel-form__input">
                       <span class="select-item select-item--min">
                         <select class="select-item__input">
-                          <option value="USD">Валюта к выводу:</option>
+                          <option value="USD">Валюта пополнения:</option>
                           <option value="USD">USD</option>
                           <option value="EUR">EUR</option>
                         </select>
@@ -231,7 +231,7 @@
 
                   <div class="panel-form__inputs-item">
                     <label class="input-item input-item--min panel-form__input">
-                      <input class="input input--min input-item__input" type="number" placeholder="Сумма к выводу:">
+                      <input class="input input--min input-item__input" type="number" placeholder="Сумма пополнения:">
                     </label>
                   </div>
                 </fieldset>
@@ -243,7 +243,8 @@
             </div>
           </article>
 
-          <article class="content-banner withdrawal__table">
+
+          <article class="content-banner refill__table">
             <h3 class="heading content-banner__title content-banner__title--size">
               Операции по счету
             </h3>
@@ -265,7 +266,7 @@
                   <tr class="table__tr">
                     <td class="table__td">1</td>
                     <td class="table__td">23.12.20</td>
-                    <td class="table__td">Вывод</td>
+                    <td class="table__td">Пополнение </td>
                     <td class="table__td">EUR 1000</td>
                     <td class="table__td status-progress">В процессе</td>
                     <td class="table__td">Visa</td>
@@ -274,7 +275,7 @@
                   <tr class="table__tr">
                     <td class="table__td">2</td>
                     <td class="table__td">22.12.20</td>
-                    <td class="table__td">Вывод</td>
+                    <td class="table__td">Пополнение </td>
                     <td class="table__td">EUR 1000</td>
                     <td class="table__td status-canceled">Oтменено</td>
                     <td class="table__td">Visa</td>
@@ -283,7 +284,7 @@
                   <tr class="table__tr">
                     <td class="table__td">3</td>
                     <td class="table__td">21.12.20</td>
-                    <td class="table__td">Вывод</td>
+                    <td class="table__td">Пополнение </td>
                     <td class="table__td">EUR 1000</td>
                     <td class="table__td status-confirmed">Подтверждено</td>
                     <td class="table__td">Visa</td>
@@ -293,91 +294,75 @@
             </div>
           </article>
 
-          <article class="article-investment withdrawal__article">
-            <h4 class="heading heading--all article-investment__analize-heading">
-              Вывод средств со счета
-            </h4>
+          <article class="article-investment refill__heading">
+            <h1 class="heading refill__hard-heading">
+              Пополнение счета в PROJECT
+            </h1>
 
-            <p class="text article-investment__text">
-              Брокерский счет в PROJECT позволит вам инвестировать в акции, которые со временем будут расти, чтобы
-              помочь вам в достижении ваших финансовых целей. Он предоставляет полный спектр услуг, которые вам нужны
-              для правильного инвестирования, включая не только возможность покупать и продавать акции, но и такие
-              инструменты, как исследования, которые помогут вам оценить потенциальные инвестиции.
+            <p class="text">
+              Чтобы пополнить свой счет, вам нужно будет перевести деньги со связанного банковского счета, дебетовой или
+              кредитной карты. Вы также можете переводить деньги банковским переводом или переводить инвестиции от
+              другого брокера.
             </p>
 
-            <p class="text article-investment__text">
-              Независимо от того, во что вы инвестируете – будь то накопление на новую машину или дом или действительно
-              долгосрочную цель, такую как выход на пенсию, – рано или поздно приходит время, когда вам нужно снять
-              деньги со своего брокерского счета. Но, в отличие от банковского счета, снятие денег с брокерского счета
-              иногда может включать некоторые дополнительные действия. В PROJECT вы сможете получить доступ к своим
-              деньгам, когда они вам понадобятся.
-            </p>
-
-            <p class="text article-investment__text">
-              Чем отличается снятие денег с банковского и брокерского счета
-              Брокерские счета отличаются, потому что, как правило, большая часть вашего счета состоит из акций и других
-              инвестиций. Единственный случай, когда вывести деньги с брокерского счета так же просто, как и с
-              банковского счета, – это если вы храните значительную сумму неинвестированных денежных средств на обычном
-              брокерском счете. В этом случае мы можем отправить деньги на банковский счет посредством электронного
-              перевода средств или организовать банковский перевод.
-            </p>
-
-            <p class="text article-investment__text">
-              Одна из распространенных причин, по которой вы не можете снять столько денег, сколько хотите, со своего
-              брокерского счета, заключается в том, что вам нужно продать акции или другие инвестиции, которыми вы
-              владеете, чтобы получить нужную сумму наличных.
+            <p class="text">
+              Инвесторы могут иметь столько брокерских счетов, сколько они хотят, и нет ограничений на количество денег,
+              которые вы можете ежегодно вносить на свой налогооблагаемый брокерский счет.
             </p>
           </article>
 
-          <article class="article-investment withdrawal__article">
+          <article class="article-investment investment-ipo__investment">
             <p class="text article-investment__text article-investment__text--hard">
-              В этом случае вам нужно будет выполнить трехэтапный процесс:
+              Для внесения средств на ваш счет PROJECT выполните следующие действия:
             </p>
 
-            <div class="withdrawal__process-wrap">
-              <div class="withdrawal__process-about">
-                <img src="../img/icons/process1.png" alt="" class="withdrawal__process-img">
-                <p class="withdrawal__process-text">
-                  Выберите акции, которые хотите продать, и войдите в соответствующие сделки.
-                </p>
-              </div>
+            <ul class="list about-investment__list">
+              <li class="list__item">
+                Войдите в систему управления учетной записью.
+              </li>
 
-              <div class="withdrawal__process-about">
-                <img src="../img/icons/process2.png" alt="" class="withdrawal__process-img">
-                <p class="withdrawal__process-text">
-                  Подождите, пока сделка завершится, что обычно занимает два рабочих дня.
-                </p>
-              </div>
+              <li class="list__item">
+                В списке “Тип транзакции” выберите Депозит.
+              </li>
 
-              <div class="withdrawal__process-about">
-                <img src="../img/icons/process3.png" alt="" class="withdrawal__process-img">
-                <p class="withdrawal__process-text">
-                  Запросите снятие наличных, как только выручка от продажи поступит на ваш счет.
-                </p>
-              </div>
-            </div>
+              <li class="list__item">
+                Выберите вашу валюту из списка валют.
+              </li>
 
-            <p class="text article-investment__text withdrawal__article-text">
-              Многим инвесторам сложнее всего понять второй шаг. Когда вы покупаете или продаете акции у брокера,
-              торговля часто происходит мгновенно, и вы обычно можете сразу увидеть новые позиции, когда проверяете свой
-              брокерский счет в Интернете. Но за кулисами ваш брокер работает с другими финансовыми учреждениями, чтобы
-              обеспечить выполнение следующих внутренних шагов по установленному графику. Текущие правила по ценным
-              бумагам дают брокерам два рабочих дня на завершение процесса расчета, так что именно тогда ваши деньги
-              будут доступны для вывода.
+              <li class="list__item">
+                В списке “Метод” выберите желаемый способ депозита (банковский перевод и т.д.).
+              </li>
+
+              <li class="list__item">
+                Введите сумму предполагаемого депозита в поле “Сумма”.
+              </li>
+
+              <li class="list__item">
+                Следуйте инструкциям на экране, чтобы заполнить уведомление о депозите.
+              </li>
+            </ul>
+
+            <p class="text">
+              Процесс открытия брокерского счета аналогичен открытию банковского счета с одним важным отличием. Для
+              новой брокерской учетной записи вам нужно заполнить новые формы учетной записи. В них нужно будет
+              обозначить вашу толерантность к риску, инвестиционные цели, временной горизонт и степень ваших финансовых
+              знаний, чтобы создать профиль инвестора.
             </p>
           </article>
 
-          <article class="article-investment withdrawal__article">
-            <h4 class="heading heading--all article-investment__analize-heading">
-              Оформление заявки на вывод средств
-            </h4>
+          <article class="article-investment refill__heading">
+            <h2 class="heading heading--all">
+              Инвестиции
+            </h2>
 
-            <p class="text article-investment__text">
-              Чтобы запросить вывод средств на свой банковский счет, заполните форму на этой странице. Внимательно
-              проверьте все данные. Обратите внимание, что выводить средства можно только на верифицированные карты
-              (карты, владение которыми вы подтвердили документально). Заявки на вывод средств обычно обрабатываются в
-              течение двух рабочих дней. В случае возникновения любых вопросов по выводу средств, вы всегда можете
-              обратиться к нашим менеджерам за консультацией.
+            <p class="text">
+              Что касается инвестиций, которые вы используете, паевые инвестиционные фонды и ETF обычно предлагают
+              большую диверсификацию, чем отдельные акции, позволяя вам держать корзину ценных бумаг, а не только одну
+              компанию. После того, как вы выбрали свои инвестиции, не забудьте периодически перебалансировать свой
+              портфель в соответствии с вашим целевым распределением активов, продавая раздутые активы и покупая те,
+              которые дешевы. Самое главное: не позволяйте ежедневным колебаниям на фондовом рынке влиять на ваш
+              долгосрочный инвестиционный план. Если вы не уверены в своих знаниях, то всегда можете воспользоваться
+              услугами консультантов PROJECT.
             </p>
           </article>
         </section>

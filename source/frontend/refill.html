@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {title: 'Мой счет'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+      @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap">
+        <section class="withdrawal refill">
+          <h1 class="heading heading--main withdrawal__title ">
+            Мой счет
+          </h1>
+
+          <section class="trading-widget withdrawal__tracker">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+                async>
+                  {
+                    "symbols": [
+                      {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500"
+                      },
+                      {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "US 100"
+                      },
+                      {
+                        "proName": "FX_IDC:EURUSD",
+                        "title": "EUR/USD"
+                      },
+                      {
+                        "proName": "BITSTAMP:BTCUSD",
+                        "title": "Биткоин"
+                      },
+                      {
+                        "proName": "BITSTAMP:ETHUSD",
+                        "title": "Эфириум"
+                      }
+                    ],
+
+                      "colorTheme": "light",
+                        "isTransparent": false,
+                          "showSymbolLogo": true,
+                            "locale": "ru"
+                  }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </section>
+
+          <article class="content-banner withdrawal__form withdrawal__form--wrap">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Заполните все необходимые поля
+            </h3>
+
+            <div class="content-banner__wrap">
+              <form class="panel-form">
+                <fieldset class="panel-form__inputs panel-form__inputs--half-items">
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Счёт</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                          <option value="-">- Выбрите -</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="USD">Валюта пополнения:</option>
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Метод платежа</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="-">- Выбрите -</option>
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <input class="input input--min input-item__input" type="number" placeholder="Сумма пополнения:">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="panel-form__btn">
+                  <button class="btn btn--second">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </article>
+
+
+          <article class="content-banner refill__table">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Операции по счету
+            </h3>
+
+            <div class="content-banner__wrap">
+              <table class="table">
+                <thead class="table__thead">
+                  <tr class="table__tr">
+                    <th class="table__th">№</th>
+                    <th class="table__th">Создано</th>
+                    <th class="table__th">Тип операции</th>
+                    <th class="table__th">Сумма</th>
+                    <th class="table__th">Статус</th>
+                    <th class="table__th">Метод платежа</th>
+                  </tr>
+                </thead>
+
+                <tbody class="table__tbody">
+                  <tr class="table__tr">
+                    <td class="table__td">1</td>
+                    <td class="table__td">23.12.20</td>
+                    <td class="table__td">Пополнение </td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-progress">В процессе</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+
+                  <tr class="table__tr">
+                    <td class="table__td">2</td>
+                    <td class="table__td">22.12.20</td>
+                    <td class="table__td">Пополнение </td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-canceled">Oтменено</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+
+                  <tr class="table__tr">
+                    <td class="table__td">3</td>
+                    <td class="table__td">21.12.20</td>
+                    <td class="table__td">Пополнение </td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-confirmed">Подтверждено</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="article-investment refill__heading">
+            <h1 class="heading refill__hard-heading">
+              Пополнение счета в PROJECT
+            </h1>
+
+            <p class="text">
+              Чтобы пополнить свой счет, вам нужно будет перевести деньги со связанного банковского счета, дебетовой или
+              кредитной карты. Вы также можете переводить деньги банковским переводом или переводить инвестиции от
+              другого брокера.
+            </p>
+
+            <p class="text">
+              Инвесторы могут иметь столько брокерских счетов, сколько они хотят, и нет ограничений на количество денег,
+              которые вы можете ежегодно вносить на свой налогооблагаемый брокерский счет.
+            </p>
+          </article>
+
+          <article class="article-investment investment-ipo__investment">
+            <p class="text article-investment__text article-investment__text--hard">
+              Для внесения средств на ваш счет PROJECT выполните следующие действия:
+            </p>
+
+            <ul class="list about-investment__list">
+              <li class="list__item">
+                Войдите в систему управления учетной записью.
+              </li>
+
+              <li class="list__item">
+                В списке “Тип транзакции” выберите Депозит.
+              </li>
+
+              <li class="list__item">
+                Выберите вашу валюту из списка валют.
+              </li>
+
+              <li class="list__item">
+                В списке “Метод” выберите желаемый способ депозита (банковский перевод и т.д.).
+              </li>
+
+              <li class="list__item">
+                Введите сумму предполагаемого депозита в поле “Сумма”.
+              </li>
+
+              <li class="list__item">
+                Следуйте инструкциям на экране, чтобы заполнить уведомление о депозите.
+              </li>
+            </ul>
+
+            <p class="text">
+              Процесс открытия брокерского счета аналогичен открытию банковского счета с одним важным отличием. Для
+              новой брокерской учетной записи вам нужно заполнить новые формы учетной записи. В них нужно будет
+              обозначить вашу толерантность к риску, инвестиционные цели, временной горизонт и степень ваших финансовых
+              знаний, чтобы создать профиль инвестора.
+            </p>
+          </article>
+
+          <article class="article-investment refill__heading">
+            <h2 class="heading heading--all">
+              Инвестиции
+            </h2>
+
+            <p class="text">
+              Что касается инвестиций, которые вы используете, паевые инвестиционные фонды и ETF обычно предлагают
+              большую диверсификацию, чем отдельные акции, позволяя вам держать корзину ценных бумаг, а не только одну
+              компанию. После того, как вы выбрали свои инвестиции, не забудьте периодически перебалансировать свой
+              портфель в соответствии с вашим целевым распределением активов, продавая раздутые активы и покупая те,
+              которые дешевы. Самое главное: не позволяйте ежедневным колебаниям на фондовом рынке влиять на ваш
+              долгосрочный инвестиционный план. Если вы не уверены в своих знаниях, то всегда можете воспользоваться
+              услугами консультантов PROJECT.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+      @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

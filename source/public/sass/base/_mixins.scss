@@ -23,37 +23,37 @@
 
 
 @mixin media-max {
-    @media (min-width: 1312px) {
+    @media (max-width: 1500px) {
         @content;
     }
 }
 
 @mixin media-xl {
-    @media (min-width: 1200px) {
+    @media (max-width: 1200px) {
         @content;
     }
 }
 
 @mixin media-lg {
-    @media (min-width: 922px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin media-md {
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         @content;
     }
 }
 
 @mixin media-exsm {
-    @media (min-width: 660px) {
+    @media (max-width: 660px) {
         @content;
     }
 }
 
 @mixin media-sm {
-    @media (min-width: 576px) {
+    @media (max-width: 576px) {
         @content;
     }
 }
