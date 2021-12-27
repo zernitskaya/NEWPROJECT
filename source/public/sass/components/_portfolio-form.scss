@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  // margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .portfolio-form__input-item {
@@ -11,9 +11,15 @@
 
 .portfolio-form__fildset {
   width: 50%;
-  padding-top: 30px;
 }
 
 .portfolio-form__fildset:not(:first-child) {
   padding-left: 50px;
+}
+
+.portfolio-form__btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 16px;
 }

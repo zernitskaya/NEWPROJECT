@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include('../layouts/head.html', {title: 'Последние новости'})
+@@include('../layouts/head.html', {title: 'Вывод средств'})
 
 <body>
   <div class="layout">
@@ -15,7 +15,255 @@
 
     <main class="layout__main">
       <div class="layout__main-wrap">
+        <section class="withdrawal">
+          <h1 class="heading heading--main withdrawal__title">
+            Вывод средств
+          </h1>
 
+          <section class="trading-widget withdrawal__tracker">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js"
+                async>
+                  {
+                    "symbols": [
+                      {
+                        "proName": "FOREXCOM:SPXUSD",
+                        "title": "S&P 500"
+                      },
+                      {
+                        "proName": "FOREXCOM:NSXUSD",
+                        "title": "US 100"
+                      },
+                      {
+                        "proName": "FX_IDC:EURUSD",
+                        "title": "EUR/USD"
+                      },
+                      {
+                        "proName": "BITSTAMP:BTCUSD",
+                        "title": "Биткоин"
+                      },
+                      {
+                        "proName": "BITSTAMP:ETHUSD",
+                        "title": "Эфириум"
+                      }
+                    ],
+
+                      "colorTheme": "light",
+                        "isTransparent": false,
+                          "showSymbolLogo": true,
+                            "locale": "ru"
+                  }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </section>
+
+          <article class="content-banner withdrawal__form withdrawal__form--wrap">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Заполните все необходимые поля
+            </h3>
+
+            <div class="content-banner__wrap">
+              <form class="panel-form">
+                <fieldset class="panel-form__inputs panel-form__inputs--half-items">
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Счёт</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                          <option value="-">- Выбрите -</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="USD">Валюта к выводу:</option>
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Метод платежа</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="-">- Выбрите -</option>
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <input class="input input--min input-item__input" type="number" placeholder="Сумма к выводу:">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="panel-form__btn">
+                  <button class="btn btn--second">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </article>
+
+          <article class="content-banner withdrawal__table">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Операции по счету
+            </h3>
+
+            <div class="content-banner__wrap">
+              <table class="table">
+                <thead class="table__thead">
+                  <tr class="table__tr">
+                    <th class="table__th">№</th>
+                    <th class="table__th">Создано</th>
+                    <th class="table__th">Тип операции</th>
+                    <th class="table__th">Сумма</th>
+                    <th class="table__th">Статус</th>
+                    <th class="table__th">Метод платежа</th>
+                  </tr>
+                </thead>
+
+                <tbody class="table__tbody">
+                  <tr class="table__tr">
+                    <td class="table__td">1</td>
+                    <td class="table__td">23.12.20</td>
+                    <td class="table__td">Вывод</td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-progress">В процессе</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+
+                  <tr class="table__tr">
+                    <td class="table__td">2</td>
+                    <td class="table__td">22.12.20</td>
+                    <td class="table__td">Вывод</td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-canceled">Oтменено</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+
+                  <tr class="table__tr">
+                    <td class="table__td">3</td>
+                    <td class="table__td">21.12.20</td>
+                    <td class="table__td">Вывод</td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-confirmed">Подтверждено</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="article-investment withdrawal__article">
+            <h4 class="heading heading--all article-investment__analize-heading">
+              Вывод средств со счета
+            </h4>
+
+            <p class="text article-investment__text">
+              Брокерский счет в PROJECT позволит вам инвестировать в акции, которые со временем будут расти, чтобы
+              помочь вам в достижении ваших финансовых целей. Он предоставляет полный спектр услуг, которые вам нужны
+              для правильного инвестирования, включая не только возможность покупать и продавать акции, но и такие
+              инструменты, как исследования, которые помогут вам оценить потенциальные инвестиции.
+            </p>
+
+            <p class="text article-investment__text">
+              Независимо от того, во что вы инвестируете – будь то накопление на новую машину или дом или действительно
+              долгосрочную цель, такую как выход на пенсию, – рано или поздно приходит время, когда вам нужно снять
+              деньги со своего брокерского счета. Но, в отличие от банковского счета, снятие денег с брокерского счета
+              иногда может включать некоторые дополнительные действия. В PROJECT вы сможете получить доступ к своим
+              деньгам, когда они вам понадобятся.
+            </p>
+
+            <p class="text article-investment__text">
+              Чем отличается снятие денег с банковского и брокерского счета
+              Брокерские счета отличаются, потому что, как правило, большая часть вашего счета состоит из акций и других
+              инвестиций. Единственный случай, когда вывести деньги с брокерского счета так же просто, как и с
+              банковского счета, – это если вы храните значительную сумму неинвестированных денежных средств на обычном
+              брокерском счете. В этом случае мы можем отправить деньги на банковский счет посредством электронного
+              перевода средств или организовать банковский перевод.
+            </p>
+
+            <p class="text article-investment__text">
+              Одна из распространенных причин, по которой вы не можете снять столько денег, сколько хотите, со своего
+              брокерского счета, заключается в том, что вам нужно продать акции или другие инвестиции, которыми вы
+              владеете, чтобы получить нужную сумму наличных.
+            </p>
+          </article>
+
+          <article class="article-investment withdrawal__article">
+            <p class="text article-investment__text article-investment__text--hard">
+              В этом случае вам нужно будет выполнить трехэтапный процесс:
+            </p>
+
+            <div class="withdrawal__process-wrap">
+              <div class="withdrawal__process-about">
+                <img src="../img/icons/process1.png" alt="" class="withdrawal__process-img">
+                <p class="withdrawal__process-text">
+                  Выберите акции, которые хотите продать, и войдите в соответствующие сделки.
+                </p>
+              </div>
+
+              <div class="withdrawal__process-about">
+                <img src="../img/icons/process2.png" alt="" class="withdrawal__process-img">
+                <p class="withdrawal__process-text">
+                  Подождите, пока сделка завершится, что обычно занимает два рабочих дня.
+                </p>
+              </div>
+
+              <div class="withdrawal__process-about">
+                <img src="../img/icons/process3.png" alt="" class="withdrawal__process-img">
+                <p class="withdrawal__process-text">
+                  Запросите снятие наличных, как только выручка от продажи поступит на ваш счет.
+                </p>
+              </div>
+            </div>
+
+            <p class="text article-investment__text withdrawal__article-text">
+              Многим инвесторам сложнее всего понять второй шаг. Когда вы покупаете или продаете акции у брокера,
+              торговля часто происходит мгновенно, и вы обычно можете сразу увидеть новые позиции, когда проверяете свой
+              брокерский счет в Интернете. Но за кулисами ваш брокер работает с другими финансовыми учреждениями, чтобы
+              обеспечить выполнение следующих внутренних шагов по установленному графику. Текущие правила по ценным
+              бумагам дают брокерам два рабочих дня на завершение процесса расчета, так что именно тогда ваши деньги
+              будут доступны для вывода.
+            </p>
+          </article>
+
+          <article class="article-investment withdrawal__article">
+            <h4 class="heading heading--all article-investment__analize-heading">
+              Оформление заявки на вывод средств
+            </h4>
+
+            <p class="text article-investment__text">
+              Чтобы запросить вывод средств на свой банковский счет, заполните форму на этой странице. Внимательно
+              проверьте все данные. Обратите внимание, что выводить средства можно только на верифицированные карты
+              (карты, владение которыми вы подтвердили документально). Заявки на вывод средств обычно обрабатываются в
+              течение двух рабочих дней. В случае возникновения любых вопросов по выводу средств, вы всегда можете
+              обратиться к нашим менеджерам за консультацией.
+            </p>
+          </article>
+        </section>
       </div>
     </main>
 

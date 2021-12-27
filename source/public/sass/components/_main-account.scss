@@ -1,0 +1,79 @@
+.main-account__status-account {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.main-account__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-account__number {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.main-account__status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 156px;
+  margin-bottom: 8px;
+  background-color: #e1e1e1;
+  font-size: 14px;
+
+}
+
+.main-account__status--not-verified {
+  color: $strong-color;
+}
+
+.main-account__status--verified {
+  color: $verified-color;
+}
+
+.main-account__btn {
+  @include active;
+
+  text-align: center;
+  font-size: 14px;
+  color: $brand-color;
+  text-decoration: underline;
+}
+
+.main-account__user-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main-account__user-line {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.main-account__user-name {
+  font-size: 16px;
+}
+
+.main-account__count {
+  font-size: 16px;
+  color: $brand-color;
+}
+
+.main-account__user-phone {
+  font-size: 16px;
+}
+
+.main-account__user-balance {
+  font-size: 15px;
+}
+
+.main-account__user-email {
+  font-size: 16px;
+  color: $brand-color;
+}

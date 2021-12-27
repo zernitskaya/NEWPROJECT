@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {title: 'Вывод средств'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+      @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap">
+        <section class="withdrawal">
+          <h1 class="heading heading--main withdrawal__title">
+            Вывод средств
+          </h1>
+
+          <section class="trading-widget withdrawal__tracker">
+           <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                {
+                  "symbols": [
+                    {
+                      "proName": "FOREXCOM:SPXUSD",
+                      "title": "S&P 500"
+                    },
+                    {
+                      "proName": "FOREXCOM:NSXUSD",
+                      "title": "US 100"
+                    },
+                    {
+                      "proName": "FX_IDC:EURUSD",
+                      "title": "EUR/USD"
+                    },
+                    {
+                      "proName": "BITSTAMP:BTCUSD",
+                      "title": "Биткоин"
+                    },
+                    {
+                      "proName": "BITSTAMP:ETHUSD",
+                      "title": "Эфириум"
+                    }
+                  ],
+                  "colorTheme": "light",
+                  "isTransparent": false,
+                  "showSymbolLogo": true,
+                  "locale": "ru"
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </section>
+
+          <article class="content-banner withdrawal__form">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Заполните все необходимые поля
+            </h3>
+
+            <div class="content-banner__wrap">
+              <form class="panel-form">
+                <fieldset class="panel-form__inputs panel-form__inputs--half-items">
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Счёт</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                          <option value="-">- Выбрите -</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="USD">Валюта к выводу:</option>
+                          <option value="USD">USD</option>
+                          <option value="EUR">EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text">
+                        <span class="input-item__text-wrap">Метод платежа</span>
+                        :
+                      </span>
+
+                      <span class="select-item select-item--min">
+                        <select class="select-item__input">
+                          <option value="-">- Выбрите -</option>
+                          <option value="41005-5EUR">41005 - 5 EUR</option>
+                        </select>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel-form__inputs-item">
+                    <label class="input-item input-item--min panel-form__input">
+                      <input class="input input--min input-item__input" type="number" placeholder="Сумма к выводу:">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="panel-form__btn">
+                  <button class="btn btn--second">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </article>
+
+          <article class="content-banner withdrawal__table">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Операции по счету
+            </h3>
+
+            <div class="content-banner__wrap">
+              <table class="table">
+                <thead class="table__thead">
+                  <tr class="table__tr">
+                    <th class="table__th">№</th>
+                    <th class="table__th">Создано</th>
+                    <th class="table__th">Тип операции</th>
+                    <th class="table__th">Сумма</th>
+                    <th class="table__th">Статус</th>
+                    <th class="table__th">Метод платежа</th>
+                  </tr>
+                </thead>
+
+                <tbody class="table__tbody">
+                  <tr class="table__tr">
+                    <td class="table__td">1</td>
+                    <td class="table__td">23.12.20</td>
+                    <td class="table__td">Вывод</td>
+                    <td class="table__td">EUR 1000</td>
+                    <td class="table__td status-progress">В процессе</td>
+                    <td class="table__td">Visa</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+      @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

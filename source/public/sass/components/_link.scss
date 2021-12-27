@@ -1,0 +1,11 @@
+.link {
+  @include active;
+
+  color: $brand-color;
+  font-size: 16px;
+  font-weight: 700;
+
+  @include hover {
+    text-decoration: underline;
+  }
+}

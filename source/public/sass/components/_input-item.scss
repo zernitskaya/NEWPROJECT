@@ -4,9 +4,19 @@
     font-size: 14px;
 }
 
+.input-item--min {
+  .input-item__text {
+    width: 140px;
+    font-size: 15px;
+  }
+}
+
 .input-item__text {
     flex-shrink: 0;
     margin-right: 24px;
+    margin: 0;
+    padding-right: 4px;
+    white-space: nowrap;
 }
 
 .input-item--required .input-item__text-wrap:after {

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {title: 'Панель управления'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+      @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap">
+        <section class="control-panel">
+          <h1 class="heading heading--main control-panel__title">
+            Панель управления
+          </h1>
+
+          <section class="trading-widget control-panel__tracker">
+           <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+                {
+                  "symbols": [
+                    {
+                      "proName": "FOREXCOM:SPXUSD",
+                      "title": "S&P 500"
+                    },
+                    {
+                      "proName": "FOREXCOM:NSXUSD",
+                      "title": "US 100"
+                    },
+                    {
+                      "proName": "FX_IDC:EURUSD",
+                      "title": "EUR/USD"
+                    },
+                    {
+                      "proName": "BITSTAMP:BTCUSD",
+                      "title": "Биткоин"
+                    },
+                    {
+                      "proName": "BITSTAMP:ETHUSD",
+                      "title": "Эфириум"
+                    }
+                  ],
+                  "colorTheme": "light",
+                  "isTransparent": false,
+                  "showSymbolLogo": true,
+                  "locale": "ru"
+                }
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+          </section>
+
+          <section class="control-panel__items">
+            <div class="control-panel__item">
+              <article class="content-banner">
+                <h3 class="heading content-banner__title content-banner__title--size">
+                  Основной счет
+                </h3>
+
+                <div class="content-banner__wrap">
+                  <div class="main-account">
+                    <div class="main-account__status-account">
+                      <div class="main-account__number">
+                        12345678
+                      </div>
+
+                      <div class="main-account__control">
+                        <mark class="main-account__status main-account__status--not-verified">Не верифицирован</mark>
+                        <button class="main-account__btn" type="button">Верифицировать</button>
+                      </div>
+                    </div>
+
+                    <div class="main-account__user-info">
+                      <div class="main-account__user-item">
+                        <div class="main-account__user-name">Евгений Лазарев</div>
+                        <div class="dotted main-account__user-line"></div>
+                        <div class="main-account__count">EUR 1250</div>
+                      </div>
+
+                      <div class="main-account__user-item">
+                        <div class="main-account__user-phone">+ 708-55-1212</div>
+                        <div class="main-account__user-balance">Баланс счета</div>
+                      </div>
+
+                      <div class="main-account__user-item">
+                        <div class="main-account__user-email">lazarev_eugeniy2334@gmail.com</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="control-panel__item">
+              <article class="content-banner">
+                <h3 class="heading content-banner__title content-banner__title--size">
+                  Основной счет
+                </h3>
+
+                <div class="content-banner__wrap">
+                  <form class="panel-form">
+                    <fieldset class="panel-form__inputs">
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Счёт</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="41005-5EUR">41005 - 5 EUR</option>
+                              <option value="-">- Выбрите -</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Метод платежа</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="-">- Выбрите -</option>
+                              <option value="41005-5EUR">41005 - 5 EUR</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Валюта пополнения</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="USD">USD</option>
+                              <option value="EUR">EUR</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Сумма пополнения</span>
+                            :
+                          </span>
+
+                          <input class="input input--min input-item__input" type="number">
+                        </label>
+                      </div>
+                    </fieldset>
+
+                    <div class="panel-form__btn">
+                      <button class="btn btn--second">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </article>
+            </div>
+
+            <div class="control-panel__item">
+              <article class="content-banner">
+                <h3 class="heading content-banner__title content-banner__title--size">
+                  Вывод средств
+                </h3>
+
+                <div class="content-banner__wrap">
+                  <form class="panel-form">
+                    <fieldset class="panel-form__inputs">
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Счёт</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="41005-5EUR">41005 - 5 EUR</option>
+                              <option value="-">- Выбрите -</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Метод платежа</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="-">- Выбрите -</option>
+                              <option value="41005-5EUR">41005 - 5 EUR</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Валюта к выводу</span>
+                            :
+                          </span>
+
+                          <span class="select-item select-item--min">
+                            <select class="select-item__input">
+                              <option value="USD">USD</option>
+                              <option value="EUR">EUR</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="panel-form__inputs-item">
+                        <label class="input-item input-item--min panel-form__input">
+                          <span class="input-item__text">
+                            <span class="input-item__text-wrap">Сумма к выводу</span>
+                            :
+                          </span>
+
+                          <input class="input input--min input-item__input" type="number">
+                        </label>
+                      </div>
+                    </fieldset>
+
+                    <div class="panel-form__btn">
+                      <button class="btn btn--second">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </article>
+            </div>
+
+            <div class="control-panel__item">
+              <article class="content-banner">
+                <h3 class="heading content-banner__title content-banner__title--size">
+                  Последние транзакции
+                </h3>
+
+                <div class="content-banner__wrap">
+                  <ul class="payment-his">
+                    <li class="payment-his__item">
+                      <div class="payment-his__date-status">
+                        <div class="payment-his__date">23.12.20 | 20:10</div>
+                        <div class="payment-his__status status-confirmed">Подтверждено</div>
+                      </div>
+
+                      <div class="payment-his__name-curr">
+                        <div class="payment-his__name">Пополнение счета</div>
+                        <div class="payment-his__line dotted"></div>
+                        <div class="payment-his__curr">EUR 1000</div>
+                      </div>
+
+                      <div class="payment-his__acc">Основной счет</div>
+                    </li>
+
+                    <li class="payment-his__item">
+                      <div class="payment-his__date-status">
+                        <div class="payment-his__date">23.12.20 | 20:10</div>
+                        <div class="payment-his__status status-canceled">Отменено</div>
+                      </div>
+
+                      <div class="payment-his__name-curr">
+                        <div class="payment-his__name">Вывод средств</div>
+                        <div class="payment-his__line dotted"></div>
+                        <div class="payment-his__curr">EUR 1000</div>
+                      </div>
+
+                      <div class="payment-his__acc">Основной счет</div>
+                    </li>
+
+                    <li class="payment-his__item">
+                      <div class="payment-his__date-status">
+                        <div class="payment-his__date">23.12.20 | 20:10</div>
+                        <div class="payment-his__status status-progress">Подтверждено</div>
+                      </div>
+
+                      <div class="payment-his__name-curr">
+                        <div class="payment-his__name">Пополнение счета</div>
+                        <div class="payment-his__line dotted"></div>
+                        <div class="payment-his__curr">EUR 1000</div>
+                      </div>
+
+                      <div class="payment-his__acc">Основной счет</div>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div class="control-panel__item">
+              <article class="content-banner">
+                <h3 class="heading content-banner__title content-banner__title--size">
+                  Последние новости
+                </h3>
+
+                <div class="content-banner__wrap">
+                  <div class="last-news-list">
+                    <ul class="last-news-list__list">
+                      <li class="last-news-list__item">
+                        <h3 class="last-news-list__title">
+                          <a class="last-news-list__link" href="#">
+                            Российский миллиардер через суд добился снижения ставки по кредиту до 1%
+                          </a>
+                        </h3>
+
+                        <time class="last-news-list__date" datetime="2001-05-15 19:00">
+                          <a class="last-news-list__date-link" href="#">
+                            25.08.2021 20:41
+                          </a>
+                        </time>
+                      </li>
+
+                      <li class="last-news-list__item">
+                        <h3 class="last-news-list__title">
+                          <a class="last-news-list__link" href="#">
+                            Российский миллиардер через суд добился снижения ставки по кредиту до 1%
+                          </a>
+                        </h3>
+
+                        <time class="last-news-list__date" datetime="2001-05-15 19:00">
+                          <a class="last-news-list__date-link" href="#">
+                            25.08.2021 20:41
+                          </a>
+                        </time>
+                      </li>
+
+                      <li class="last-news-list__item">
+                        <h3 class="last-news-list__title">
+                          <a class="last-news-list__link" href="#">
+                            Российский миллиардер через суд добился снижения ставки по кредиту до 1%
+                          </a>
+                        </h3>
+
+                        <time class="last-news-list__date" datetime="2001-05-15 19:00">
+                          <a class="last-news-list__date-link" href="#">
+                            25.08.2021 20:41
+                          </a>
+                        </time>
+                      </li>
+                    </ul>
+
+                    <div class="last-news-list__show-more">
+                      <a class="link" href="#">Смотреть все</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+      @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

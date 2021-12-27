@@ -1,0 +1,29 @@
+.last-news-list__item:not(:last-child) {
+  margin-bottom: 8px;
+  border-bottom: 1px solid;
+}
+
+.last-news-list__item {
+  padding-bottom: 8px;
+}
+
+.last-news-list__link {
+  @include active;
+
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.last-news-list__date-link {
+  @include active;
+
+  font-size: 10px;
+  font-weight: 700;
+  color: $brand-color;
+}
+
+.last-news-list__show-more {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,29 @@
+.panel-form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -4px;
+}
+
+.panel-form__inputs--half-items {
+  .panel-form__inputs-item {
+    width: 50%;
+    margin-bottom: 8px;
+  }
+}
+
+.panel-form__inputs-item {
+  width: 100%;
+  padding: 0 8px;
+  margin-bottom: 4px;
+}
+
+.panel-form__inputs {
+  margin-bottom: 18px;
+}
+
+.panel-form__btn {
+  display: flex;
+  justify-content: center;
+}

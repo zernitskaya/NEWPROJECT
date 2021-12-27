@@ -1,0 +1,28 @@
+.control-panel__title {
+  margin-bottom: 24px;
+}
+
+.control-panel__tracker {
+  margin-bottom: 14px;
+}
+
+.control-panel__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: -12px;
+}
+
+.control-panel__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 6px;
+  margin-bottom: 12px;
+  width: 33.33%;
+}
+
+.control-panel__item:nth-child(1),
+.control-panel__item:nth-child(2) {
+  width: 50%;
+}
