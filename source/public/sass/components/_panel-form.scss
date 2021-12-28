@@ -10,6 +10,18 @@
   .panel-form__inputs-item {
     width: 50%;
     margin-bottom: 8px;
+
+    @include media-md {
+      width: 100%;
+
+      .input-item__text--hidden-desc {
+        display: block;
+      }
+    }
+
+    @include media-exsm {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -17,6 +29,10 @@
   width: 100%;
   padding: 0 8px;
   margin-bottom: 4px;
+
+  @include media-exsm {
+    margin-bottom: 15px;
+  }
 }
 
 .panel-form__inputs {
@@ -26,4 +42,12 @@
 .panel-form__btn {
   display: flex;
   justify-content: center;
+}
+
+.panel-form__strong {
+  display: block;
+  color: $strong-color;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 15px;
 }

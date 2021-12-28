@@ -8,6 +8,10 @@
     @include focus {
         border: 1px solid $brand-color;
     }
+
+    @include media-exsm {
+      height: 33px;
+    }
 }
 
 .input--min {

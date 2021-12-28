@@ -3,12 +3,24 @@
     color: $brand-color;
     font-size: 24px;
     font-weight: 700;
+
+    @include media-lg {
+      margin-bottom: 24px;
+    }
 }
 
 .hard-heading__text:not(:last-child) {
     margin-bottom: 20px;
+
+    @include media-lg {
+      margin-bottom: 15px;
+    }
 }
 
 .hard-heading__subtitle {
     margin-bottom: 24px;
+
+    @include media-lg {
+      margin-bottom: 15px;
+    }
 }

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Мой счет</title>
+  <title>Пополнение счета</title>
 
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="./img/fav-logo.png">
@@ -132,12 +132,12 @@
 
     <main class="layout__main">
       <div class="layout__main-wrap">
-        <section class="withdrawal refill">
-          <h1 class="heading heading--main withdrawal__title ">
-            Мой счет
+        <section class="refill">
+          <h1 class="heading heading--main heading--account">
+            Пополнение счета
           </h1>
 
-          <section class="trading-widget withdrawal__tracker">
+          <section class="trading-widget">
             <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container">
               <div class="tradingview-widget-container__widget"></div>
@@ -177,7 +177,7 @@
             <!-- TradingView Widget END -->
           </section>
 
-          <article class="content-banner withdrawal__form withdrawal__form--wrap">
+          <article class="content-banner refill__form">
             <h3 class="heading content-banner__title content-banner__title--size">
               Заполните все необходимые поля
             </h3>
@@ -203,6 +203,11 @@
 
                   <div class="panel-form__inputs-item">
                     <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text input-item__text--hidden-desc">
+                        <span class="input-item__text-wrap">Валюта пополнения</span>
+                        :
+                      </span>
+
                       <span class="select-item select-item--min">
                         <select class="select-item__input">
                           <option value="USD">Валюта пополнения:</option>
@@ -231,10 +236,19 @@
 
                   <div class="panel-form__inputs-item">
                     <label class="input-item input-item--min panel-form__input">
+                      <span class="input-item__text input-item__text--hidden-desc">
+                        <span class="input-item__text-wrap">Сумма пополнения</span>
+                        :
+                      </span>
+
                       <input class="input input--min input-item__input" type="number" placeholder="Сумма пополнения:">
                     </label>
                   </div>
                 </fieldset>
+
+                <em class="panel-form__strong">
+                  * Вы будете перенаправлены на страницу оплаты
+                </em>
 
                 <div class="panel-form__btn">
                   <button class="btn btn--second">Отправить</button>
@@ -242,7 +256,6 @@
               </form>
             </div>
           </article>
-
 
           <article class="content-banner refill__table">
             <h3 class="heading content-banner__title content-banner__title--size">
@@ -294,29 +307,27 @@
             </div>
           </article>
 
-          <article class="article-investment refill__heading">
-            <h1 class="heading refill__hard-heading">
+          <article class="article-investment refill__article">
+            <h2 class="heading article-investment__analize-heading">
               Пополнение счета в PROJECT
-            </h1>
+            </h2>
 
-            <p class="text">
+            <p class="text article-investment__text">
               Чтобы пополнить свой счет, вам нужно будет перевести деньги со связанного банковского счета, дебетовой или
               кредитной карты. Вы также можете переводить деньги банковским переводом или переводить инвестиции от
               другого брокера.
             </p>
 
-            <p class="text">
+            <p class="text article-investment__text">
               Инвесторы могут иметь столько брокерских счетов, сколько они хотят, и нет ограничений на количество денег,
               которые вы можете ежегодно вносить на свой налогооблагаемый брокерский счет.
             </p>
-          </article>
 
-          <article class="article-investment investment-ipo__investment">
             <p class="text article-investment__text article-investment__text--hard">
               Для внесения средств на ваш счет PROJECT выполните следующие действия:
             </p>
 
-            <ul class="list about-investment__list">
+            <ul class="list article-investment__list">
               <li class="list__item">
                 Войдите в систему управления учетной записью.
               </li>
@@ -342,16 +353,14 @@
               </li>
             </ul>
 
-            <p class="text">
+            <p class="text article-investment__text">
               Процесс открытия брокерского счета аналогичен открытию банковского счета с одним важным отличием. Для
               новой брокерской учетной записи вам нужно заполнить новые формы учетной записи. В них нужно будет
               обозначить вашу толерантность к риску, инвестиционные цели, временной горизонт и степень ваших финансовых
               знаний, чтобы создать профиль инвестора.
             </p>
-          </article>
 
-          <article class="article-investment refill__heading">
-            <h2 class="heading heading--all">
+            <h2 class="heading heading--all article-investment__analize-heading">
               Инвестиции
             </h2>
 
@@ -372,22 +381,55 @@
     <div class="layout__footer">
       <footer class="footer">
   <div class="footer__left-wrap">
+    <div class="footer__right-wrap">
+      <p class="footer__text">
+        Чтобы получить консультацию по интересующему вопросу, напишите нам письмо с указанием вашего запроса:
+      </p>
+
+      <div class="footer__info">
+        <a class="footer__info-link" href="#">
+          <span class="footer__info-text">E-mail.:</span>
+          info@example.com
+        </a>
+      </div>
+
+      <p class="footer__text">Также с нами можно связаться по телефону:</p>
+
+      <div class="footer__info">
+        <a class="footer__info-link" href="#">
+          <span class="footer__info-text">Тел.:</span>
+          +7(000)000-00-00
+        </a>
+      </div>
+    </div>
+
     <ul class="footer__list">
-      <li class="footer__item"><img class="footer__img" src="./img/icons/lei-footer.png" alt="lei-footer" width="100">
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/lei-footer.png" alt="lei-footer" width="100">
       </li>
-      <li class="footer__item"><img class="footer__img" src="./img/icons/asic-footer.png" alt="asic-footer" width="110">
+
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/asic-footer.png" alt="asic-footer" width="110">
       </li>
-      <li class="footer__item"><img class="footer__img" src="./img/icons/visa-footer.png" alt="visa-footer" width="80">
+
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/visa-footer.png" alt="visa-footer" width="80">
       </li>
-      <li class="footer__item"><img class="footer__img" src="./img/icons/mastercard-footer.png" alt="mastercard-footer"
+
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/mastercard-footer.png" alt="mastercard-footer"
           width="100">
       </li>
-      <li class="footer__item"><img class="footer__img" src="./img/icons/rapid-footer.png" alt="rapid-footer"
-          width="68"></li>
-      <li class="footer__item"><img class="footer__img" src="./img/icons/3dsecured-footer.png" alt="3dsecured-footer"
-          width="50">
+
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/rapid-footer.png" alt="rapid-footer" width="68">
+      </li>
+
+      <li class="footer__item">
+        <img class="footer__img" src="./img/icons/3dsecured-footer.png" alt="3dsecured-footer" width="50">
       </li>
     </ul>
+
     <nav class="footer__nav">
       <ul class="footer__nav-list">
         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности </a></li>
@@ -398,27 +440,6 @@
     </nav>
 
     <p class="footer__copyright"> © 2021 Project. All Rights Reserved.</p>
-  </div>
-
-  <div class="footer__right-wrap">
-    <p class="footer__text">
-      Чтобы получить консультацию по интересующему вопросу, напишите нам письмо с указанием вашего запроса:
-    </p>
-
-    <div class="footer__info">
-      <a class="footer__info-link" href="#">
-        <span class="footer__info-text">E-mail.:</span>
-        info@example.com
-      </a>
-    </div>
-    <p class="footer__text">Также с нами можно связаться по телефону:</p>
-
-    <div class="footer__info">
-      <a class="footer__info-link" href="#">
-        <span class="footer__info-text">Тел.:</span>
-        +7(000)000-00-00
-      </a>
-    </div>
   </div>
 </footer>
 

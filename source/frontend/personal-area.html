@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include('../layouts/head.html', {'title': 'New project'})
+@@include('../layouts/head.html', {'title': 'Личный кабинет'})
 
 <body>
   <div class="layout">
@@ -16,7 +16,7 @@
     <main class="layout__main">
       <div class="layout__main-wrap">
         <div class="personal-area">
-          <article class="hard-heading investment-ipo__heading">
+          <article class="hard-heading personal-area__heading">
             <h1 class="hard-heading__title">
               Личный кабинет
             </h1>
@@ -33,7 +33,7 @@
             </p>
           </article>
 
-          <article class="article-investment investment-ipo__investment">
+          <article class="article-investment personal-area__investment">
             <h4 class="heading heading--all article-investment__analize-heading">
               Следование духу времени
             </h4>
@@ -46,13 +46,13 @@
             </p>
           </article>
 
-          <article class="personal">
-            <div class="strategy-banner">
-              <h3 class="heading strategy-banner__heading">
-                Заполните все необходимые поля
-              </h3>
+          <article class="content-banner personal-area__personal">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Заполните все необходимые поля
+            </h3>
 
-              <div class="portfolio-form">
+            <div class="content-banner__wrap">
+              <form class="portfolio-form">
                 <fieldset class="portfolio-form__fildset">
                   <div class="portfolio-form__input">
                     <label class="portfolio-form__input-item input-item input-item--required">
@@ -126,49 +126,51 @@
                     </label>
                   </div>
                 </fieldset>
-              </div>
 
-              <div class="aggressive-strategy__wrap-btn">
-                <button class="btn btn--second">Отправить</button>
+                <div class="portfolio-form__btn">
+                  <button class="btn btn--second">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </article>
+
+          <article class="content-banner personal-area__personal">
+            <h3 class="heading content-banner__title content-banner__title--size">
+              Изменение пароля личного кабинета
+            </h3>
+
+            <div class="content-banner__wrap">
+              <div class="portfolio-form">
+                <fieldset class="portfolio-form__fildset">
+                  <div class="portfolio-form__input">
+                    <label class="portfolio-form__input-item input-item input-item--required">
+                      <span class="input-item__text">Новый пароль:</span>
+
+                      <input class="input input-item__input" type="text">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="portfolio-form__fildset">
+                  <div class="portfolio-form__input">
+                    <label class="portfolio-form__input-item input-item input-item--required">
+                      <span class="input-item__text">
+                        Подтверждение:
+                      </span>
+
+                      <input class="input input-item__input" type="text">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="portfolio-form__btn">
+                  <button class="btn btn--second">Отправить</button>
+                </div>
               </div>
             </div>
           </article>
 
-          <div class="strategy-banner">
-            <h3 class="heading strategy-banner__heading">
-              Изменение пароля личного кабинета
-            </h3>
-
-            <div class="portfolio-form">
-              <fieldset class="portfolio-form__fildset">
-                <div class="portfolio-form__input">
-                  <label class="portfolio-form__input-item input-item input-item--required">
-                    <span class="input-item__text">Новый пароль:</span>
-
-                    <input class="input input-item__input" type="text">
-                  </label>
-                </div>
-              </fieldset>
-
-              <fieldset class="portfolio-form__fildset">
-                <div class="portfolio-form__input">
-                  <label class="portfolio-form__input-item input-item input-item--required">
-                    <span class="input-item__text">
-                      Подтверждение:
-                    </span>
-
-                    <input class="input input-item__input" type="text">
-                  </label>
-                </div>
-              </fieldset>
-            </div>
-
-            <div class="aggressive-strategy__wrap-btn">
-              <button class="btn btn--second">Отправить</button>
-            </div>
-          </div>
-
-          <article class="about-investment portfolio-investment__investment">
+          <article class="about-investment personal-area__investment">
             <div class="about-investment__analize-left">
               <h4 class="heading heading--all about-investment__analize-heading">
                 Сотрудничество с фондом PROJECT – это:
@@ -197,7 +199,7 @@
 
             <div class="about-investment__analize-right">
               <div class="about-investment__ing-wrap">
-                <img class="about-investment__analize-img" src="./img/risk.png" alt="">
+                <img class="about-investment__analize-img" src="./img/hands.jpg" alt="hands">
               </div>
             </div>
           </article>
@@ -252,10 +254,8 @@
               </p>
             </article>
           </div>
-
-
-          </section>
-        </div>
+        </section>
+      </div>
     </main>
 
     <div class="layout__footer">

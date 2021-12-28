@@ -4,12 +4,15 @@
 
 .withdrawal__article {
   margin: 30px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .withdrawal__process-wrap {
-// width: 100%;
-padding: 15px 10px;
-background-color: #dde1e6;
+  padding: 15px 10px;
+  background-color: #dde1e6;
 }
 
 .withdrawal__process-about {

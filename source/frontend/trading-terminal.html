@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../layouts/head.html', {title: 'Мой счет'})
+
+<body>
+  <div class="layout">
+    <div class="layout__header">
+      @@include('../layouts/header.html')
+    </div>
+
+    <div class="layout__aside">
+      @@include('../layouts/aside.html')
+    </div>
+
+    <main class="layout__main">
+      <div class="layout__main-wrap layout__main-wrap--iframe">
+        <section>
+          <iframe src="https://trader.webterminal.online?id=790005&sign=ac2a78c4965ba730f84716abf4f232fa&lang=ru&style="
+            id="terminal" style=" width: 100%; height: 100%; min-height:700px; border: none;"></iframe>
+        </section>
+      </div>
+    </main>
+
+    <div class="layout__footer">
+      @@include('../layouts/footer.html')
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

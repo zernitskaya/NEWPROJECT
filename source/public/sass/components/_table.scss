@@ -1,9 +1,11 @@
 .table {
   width: 100%;
+  min-width: 600px;
 }
 
 .table__tr {
   border-bottom: 2px solid #dcdcdc;
+  height: 30px;
 }
 
 .table__th {

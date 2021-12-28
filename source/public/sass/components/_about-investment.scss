@@ -2,11 +2,19 @@
 .about-investment {
   display: flex;
   background-color: #fbfbfa;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
 }
 
 .about-investment__analize-left{
   padding: 30px;
   padding-right: 10px;
+
+  @include media-lg {
+    padding: 20px 15px;
+  }
 }
 
 .about-investment__analize-heading {
@@ -17,6 +25,12 @@
   max-width: 467px;
   width: 35%;
   flex-shrink: 0;
+
+  @include media-exsm {
+    width: 100%;
+    margin: auto;
+    order: -1;
+  }
 }
 
 .about-investment__text:not(:last-child) {
@@ -33,7 +47,7 @@
 
 .about-investment__ing-wrap {
   position: relative;
-  padding-bottom: 70%;
+  padding-bottom: 62.5%;
 }
 
 .about-investment__analize-img {

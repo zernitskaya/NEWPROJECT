@@ -1,5 +1,9 @@
 .form-verification {
     display: flex;
+
+    @include media-xl {
+      display: block;
+    }
 }
 
 .form-verification__form-title {
@@ -13,10 +17,20 @@
     width: 55%;
     flex-shrink: 0;
     padding-right: 40px;
+
+    @include media-xl {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 22px;
+    }
 }
 
 .form-verification__input:not(:last-child) {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+
+  @include media-exsm {
+    margin-bottom: 15px;
+  }
 }
 
 .form-verification__form-item:not(:last-child) {

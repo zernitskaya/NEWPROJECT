@@ -22,4 +22,9 @@
 .content-banner__wrap {
   padding: 28px;
   padding-bottom: 24px;
+  overflow: auto;
+
+  @include media-lg {
+    padding: 18px 15px;
+  }
 }

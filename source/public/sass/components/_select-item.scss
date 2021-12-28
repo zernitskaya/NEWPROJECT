@@ -17,6 +17,10 @@
         border-right: 1px solid #000;
         transform: rotate(45deg);
     }
+
+    @include media-exsm {
+      height: 33px;
+    }
 }
 
 .select-item--min {

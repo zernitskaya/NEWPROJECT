@@ -1,7 +1,7 @@
 .entrance {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../img/authorization-bg.png);
+  background-image: url(../img/authorization-bg.jpg);
   color: #ffffff;
 }
 
@@ -13,6 +13,15 @@
   flex-direction: column;
   justify-content: center;
   padding-bottom: 50px;
+
+  @include media-xl {
+    padding: 50px 30px;
+    max-width: 650px;
+  }
+
+  @include media-exsm {
+    padding: 50px 20px;
+  }
 }
 
 .authorization__all-wrapper {
@@ -60,6 +69,7 @@
 .authorization__input {
   background-color: #ffffff38;
   margin-bottom: 10px;
+  height: 47px;
 }
 
 .authorization__text {
@@ -79,6 +89,11 @@
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
+  }
+
+
+  @include media-exsm {
+    width: 100%;
   }
 }
 

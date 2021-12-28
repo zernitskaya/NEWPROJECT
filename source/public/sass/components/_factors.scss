@@ -1,6 +1,10 @@
 .factors {
   background-color: #dde1e6;
   padding: 25px 30px;
+
+  @include media-lg {
+    padding: 20px 15px;
+  }
 }
 
 .factors__title {

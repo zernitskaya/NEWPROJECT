@@ -3,18 +3,38 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @include media-xl {
+    display: block;
+  }
 }
 
 .portfolio-form__input-item {
   margin-top: 5px;
+
+  @include media-exsm {
+    margin-top: 15px;
+  }
 }
 
 .portfolio-form__fildset {
   width: 50%;
+
+  @include media-xl {
+    width: 100%;
+  }
 }
 
 .portfolio-form__fildset:not(:first-child) {
   padding-left: 50px;
+
+  @include media-max {
+    padding-left: 15px;
+  }
+
+  @include media-xl {
+    padding: 0;
+  }
 }
 
 .portfolio-form__btn {
