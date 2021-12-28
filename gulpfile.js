@@ -20,13 +20,13 @@ const fileinclude = require('gulp-file-include');
 const styles = () => {
   return gulp.src("source/public/sass/style.scss")
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    // .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
+    // .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -162,7 +162,7 @@ const build = gulp.series(
     copyFonts,
     copyPlugin,
     images,
-    createWebp,
+    // createWebp,
   )
 );
 
@@ -180,7 +180,7 @@ exports.default = gulp.series(
     images,
     copyFonts,
     copyPlugin,
-    createWebp
+    // createWebp
   ),
   gulp.series(
     server,

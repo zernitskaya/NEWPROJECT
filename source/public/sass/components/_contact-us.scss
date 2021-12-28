@@ -4,14 +4,26 @@
 
 .contact-us__wrap {
   display: flex;
-}
 
+  @include media-xl {
+    display: block;
+  }
+}
 
 .contact-us__contacts {
   width: 60%;
+
+  @include media-xl {
+    width: 100%;
+  }
 }
 
 .contact-us__form {
   flex-grow: 1;
   padding-left: 16px;
+
+  @include media-xl {
+    padding-left: 0;
+    padding-top: 30px;
+  }
 }

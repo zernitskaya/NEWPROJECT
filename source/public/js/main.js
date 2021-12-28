@@ -8,7 +8,7 @@ aside.addEventListener('click', (e) => {
     thisEl.parentElement.classList.toggle('nav__item--active');
   }
 
-  if (thisEl.classList.contains('burger-btn')) {
+  if (thisEl.classList.contains('burger-btn') || thisEl.classList.parentElement.contains('burger-btn')) {
     aside.classList.toggle('active');
   }
 });

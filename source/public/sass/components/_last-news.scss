@@ -1,3 +1,7 @@
+.last-news__heading {
+  margin-bottom: 30px;
+}
+
 .last-news__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -10,7 +14,7 @@
 
 .last-news__line {
   width: 100%;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #020202;
 }
 
 .last-news__btn-wrap {

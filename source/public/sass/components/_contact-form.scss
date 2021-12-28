@@ -13,6 +13,11 @@
   width: 50%;
   padding: 0 10px;
   margin-bottom: 20px;
+
+  @include media-exsm {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .contact-form__inputs-item--full {
